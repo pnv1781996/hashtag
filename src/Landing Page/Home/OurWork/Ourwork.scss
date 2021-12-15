@@ -1,0 +1,100 @@
+.block {
+  padding: 70px 0;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .title-tag {
+      width: 50%;
+      h2 {
+        margin: 0;
+        font-size: 72px;
+        line-height: 75px;
+        font-weight: 700;
+        color: #161f28;
+        font-family: "ZonaPro;", sans-serif;
+      }
+    }
+    .info-text {
+      max-width: 50%;
+      h4 {
+        line-height: 50px;
+        font-weight: 500;
+        font-size: 28px;
+        margin: 0 0 30px;
+        color: #161f28;
+        font-family: "ZonaPro;", sans-serif;
+      }
+      .ourwork-btn {
+        font-size: 18px;
+        color: #161f28;
+        text-decoration: none;
+        border: 2px solid #161f28;
+        display: inline-block;
+        line-height: 46px;
+        padding: 0 80px 0 20px;
+        min-width: 180px;
+        font-weight: 500;
+        transition: all ease 0.5s;
+        font-family: "ZonaPro;", sans-serif;
+        position: relative;
+
+        .ourwork-arrow {
+          position: absolute;
+          transition: all ease 0.5s;
+          right: 20px;
+          display: inline-block;
+          top: 47%;
+          height: 12px;
+          width: 40px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(
+              to left,
+              rgba(22, 31, 40, 0.4) 50%,
+              #161f28 50%
+            );
+            background-position: right bottom;
+            background-size: 200% 100%;
+            top: 0;
+            left: 0;
+            transition: all ease 0.9s;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 11px;
+            background: linear-gradient(
+              to top,
+              rgba(22, 31, 40, 0.4) 50%,
+              #161f28 50%
+            );
+            background-position: left bottom;
+            background-size: 100% 200%;
+            top: -1px;
+            right: 3px;
+            transition: all ease 0.9s;
+            transition-delay: 0.3s;
+            transform: rotate(45deg);
+          }
+        }
+        &:hover {
+          .ourwork-arrow {
+            &:before {
+              background-position: left bottom;
+            }
+          }
+        }
+      }
+    }
+  }
+}

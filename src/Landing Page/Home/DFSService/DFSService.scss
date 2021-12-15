@@ -1,0 +1,160 @@
+.case-study-main {
+  border-top: 1px solid #f1f1f1;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  .container-fluid {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .case-study-row {
+      display: flex;
+
+      .case-study-content {
+        width: 40%;
+        padding-right: 90px;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 36px;
+          color: #161f28;
+          margin-bottom: 0;
+          font-weight: 500;
+          font-family: "ZonaPro;", sans-serif;
+        }
+        .tag {
+          background: #fff;
+          transition: all ease 0.4s;
+          margin: 0;
+          padding: 10px 0 30px 0;
+
+          span:first-child {
+            padding-left: 0;
+          }
+          span {
+            font-size: 16px;
+            color: #161f28;
+            padding: 0 20px;
+            position: relative;
+            font-weight: 600;
+            font-family: "ZonaPro;", sans-serif;
+            text-transform: uppercase;
+          }
+          span.pipe:before {
+            content: "||";
+            display: inline-block;
+            position: absolute;
+            left: -8px;
+          }
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          color: #3f3e3e;
+          line-height: 40px;
+          letter-spacing: 1px;
+          margin: 0 0 30px;
+        }
+        .case-study-details {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #e4e5e5;
+          border-bottom: 1px solid #e4e5e5;
+          padding-top: 55px;
+          padding-bottom: 25px;
+          h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #161f28;
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 40px;
+            font-family: "ZonaPro;", sans-serif;
+          }
+          ul {
+            padding: 0;
+            margin: 0;
+          }
+          a,
+          ul,
+          li {
+            text-decoration: none;
+          }
+          ul li {
+            font-size: 15px;
+            font-weight: 400;
+            color: #4c4c4c;
+            line-height: 24px;
+            text-transform: uppercase;
+            list-style: none;
+          }
+        }
+        .readmore-detail {
+          margin-top: 30px;
+        }
+        .read-more {
+          font-size: 17px;
+          color: #ec5540;
+          text-decoration: none;
+          display: inline-block;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding: 0 46px 0 0px;
+          font-family: "ZonaPro;", sans-serif;
+          position: relative;
+
+          span {
+            position: absolute;
+            transition: all ease 0.5s;
+            right: 0;
+            display: inline-block;
+            top: 40%;
+            height: 8px;
+            width: 32px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 32px;
+              height: 2px;
+              background: linear-gradient(to left, #ec5540 50%, #161f28 50%);
+              background-position: right bottom;
+              background-size: 200% 100%;
+              top: 0;
+              left: 0;
+              transition: all ease 0.9s;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              width: 2px;
+              height: 9px;
+              background: linear-gradient(to top, #ec5540 50%, #161f28 50%);
+              background-position: left bottom;
+              background-size: 100% 200%;
+              top: 0px;
+              right: 3px;
+              transition: all ease 0.9s;
+              transition-delay: 0.3s;
+              transform: rotate(45deg);
+            }
+          }
+        }
+        .read-more:hover {
+          span:before {
+            background-position: left bottom;
+          }
+        }
+      }
+
+      .case-study-graphic {
+        width: 60%;
+
+        img {
+          width: -webkit-fill-available;
+        }
+      }
+    }
+  }
+}

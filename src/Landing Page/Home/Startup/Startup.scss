@@ -1,0 +1,119 @@
+.container-fluid {
+  //   width: 100%;
+  //   max-width: 1670px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  //   display: flex;
+  min-height: 500px;
+  justify-content: space-between;
+  align-items: center;
+
+  .inner-detail {
+    background: #161f28;
+    padding: 95px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .business-content {
+      width: 50%;
+      h2 {
+        color: #ffffff;
+        font-size: 72px;
+        line-height: normal;
+        margin: 0;
+        margin-bottom: 30px;
+        p {
+          margin-bottom: 0;
+          margin-top: 15px;
+          font-size: 72px;
+          text-transform: uppercase;
+          font-weight: 700;
+          display: inline-block;
+          color: #ec5540;
+        }
+      }
+      .contactus-btn {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid #fff;
+        display: inline-block;
+        line-height: 46px;
+        padding: 0 80px 0 20px;
+        min-width: 180px;
+        font-weight: 500;
+        transition: all ease 0.5s;
+        font-family: "ZonaPro;", sans-serif;
+        position: relative;
+
+        .contactus-arrow {
+          position: absolute;
+          transition: all ease 0.5s;
+          right: 20px;
+          display: inline-block;
+          top: 47%;
+          height: 12px;
+          width: 40px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(
+              to left,
+              rgba(255, 255, 255, 0.4) 50%,
+              #ffffff 50%
+            );
+            background-position: right bottom;
+            background-size: 200% 100%;
+            top: 0;
+            left: 0;
+            transition: all ease 0.9s;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 11px;
+            background: linear-gradient(
+              to top,
+              rgba(255, 255, 255, 0.4) 50%,
+              #ffffff 50%
+            );
+            background-position: left bottom;
+            background-size: 100% 200%;
+            top: -1px;
+            right: 3px;
+            transition: all ease 0.9s;
+            transition-delay: 0.3s;
+            transform: rotate(45deg);
+          }
+        }
+        &:hover {
+          .contactus-arrow {
+            &:before {
+              background-position: left bottom;
+            }
+          }
+        }
+      }
+    }
+
+    .business-graphic {
+      position: absolute;
+      right: 90px;
+      bottom: -5px;
+      img {
+        max-width: 550px;
+      }
+    }
+  }
+}
+.info-text {
+  max-width: 800px;
+  padding: 30px 30px 30px 0;
+}

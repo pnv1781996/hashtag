@@ -1,0 +1,75 @@
+.header {
+  height: 70px;
+  padding-left: 15px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  //   background-color: blue;
+  .logo {
+    margin-top: 20px;
+    // background-color: aqua;
+    .svg-logo {
+      width: 200px;
+      height: 42px;
+    }
+  }
+
+  .navbar {
+    // background-color: burlywood;
+    margin-left: auto;
+  }
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  .navbar ul,
+  li,
+  a {
+    text-decoration: none;
+  }
+  .navbar ul li {
+    display: inline-block;
+    color: #161f28;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    font-family: "ZonaPro;", sans-serif;
+  }
+  .navbar ul li a {
+    color: #161f28;
+    padding: 0 27px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+  .navbar ul li.start-project a:hover {
+    background: #ec5540;
+  }
+  .navbar ul li.start-project a {
+    background: #131b24;
+    color: #fff !important;
+    padding: 0 35px;
+  }
+  .navbar ul li a:hover,
+  .navbar ul li a.active {
+    color: #ec5540;
+  }
+  .has-tag {
+    height: 70px;
+    width: 70px;
+    background: #ec5540;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-family: "ZonaPro;", sans-serif;
+    color: #fff;
+  }
+  .has-tag:hover {
+    background: #161f28;
+  }
+  .add-icon {
+    margin-left: 15px;
+  }
+}

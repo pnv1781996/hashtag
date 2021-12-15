@@ -1,0 +1,114 @@
+.hero-section {
+  //   width: 100%;
+  padding: 40px 0 50px;
+
+  .container-fluid {
+    display: flex;
+    min-height: 800px;
+    // max-width: 1670px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .info-text {
+      flex: 1;
+      padding: 30px 30px 30px 0;
+
+      h1 {
+        margin-bottom: 20px !important;
+        font-size: 92px;
+        line-height: 100px;
+        font-weight: 600;
+        color: #161f28;
+        margin: 0;
+        font-family: "ZonaPro;", sans-serif;
+
+        span {
+          color: #ec5540;
+          display: inline-block;
+        }
+      }
+      p {
+        color: #6c6c6c;
+        font-size: 18px;
+        line-height: 34px;
+        margin: 0 0 30px;
+        font-weight: normal;
+        font-family: "ZonaPro;", sans-serif;
+      }
+      .casestudies-btn {
+        font-size: 18px;
+        color: #161f28;
+        text-decoration: none;
+        border: 2px solid #161f28;
+        display: inline-block;
+        line-height: 46px;
+        padding: 0 80px 0 20px;
+        min-width: 180px;
+        font-weight: 500;
+        transition: all ease 0.5s;
+        font-family: "ZonaPro;", sans-serif;
+        position: relative;
+
+        .caseStudy-arrow {
+          position: absolute;
+          transition: all ease 0.5s;
+          right: 20px;
+          display: inline-block;
+          top: 47%;
+          height: 12px;
+          width: 40px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(
+              to left,
+              rgba(22, 31, 40, 0.4) 50%,
+              #161f28 50%
+            );
+            background-position: right bottom;
+            background-size: 200% 100%;
+            top: 0;
+            left: 0;
+            transition: all ease 0.9s;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 11px;
+            background: linear-gradient(
+              to top,
+              rgba(22, 31, 40, 0.4) 50%,
+              #161f28 50%
+            );
+            background-position: left bottom;
+            background-size: 100% 200%;
+            top: -1px;
+            right: 3px;
+            transition: all ease 0.9s;
+            transition-delay: 0.3s;
+            transform: rotate(45deg);
+          }
+        }
+        &:hover {
+          .caseStudy-arrow {
+            &:before {
+              background-position: left bottom;
+            }
+          }
+        }
+      }
+    }
+    .hash-bubble-img {
+      //   max-width: 100%;
+      width: 439px;
+      min-height: 800px;
+    }
+  }
+}
